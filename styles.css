@@ -1,0 +1,541 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Background2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+body img {
+    border-radius: 7px;
+}
+
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+     position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    transform: scale(1.2);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: aqua;
+}
+
+
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 img {
+    height: 20%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    background: #ff004f;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style-type: square;
+    margin: 20px 0;
+}
+
+.tab-contents ul li span {
+    color: aqua;
+    font-size: 16px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+
+/*----- EXPERIENCE -----*/
+#experience {
+    padding: 30px 0;
+}
+
+.experience-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.blue-color {
+    color: white;
+}
+.blue-color:hover {
+    color: aqua;
+    scale: 1.5;
+    cursor: url('http://www.rw-designer.com/icon-view/7516.png'), auto;
+}
+
+.experience-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.experience-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: aqua;
+}
+
+.experience-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.experience-list p b {
+    color: aqua;
+}
+
+.experience-list div a {
+    text-decoration: none;
+    color: aqua;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.experienceBox:hover {
+    background-color: #4f5c47;
+    scale: 1.1;
+    transition: 0.2s;
+    transform: translateY(-10px);
+}
+
+
+/*--- PERSONAL PROJECTS ---*/
+
+#projects {
+    padding: 150px 0;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #4f5c47);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0,40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    cursor: pointer;
+    color: #201717;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    background-color: wheat;
+    padding:5px;
+    border-radius: 5px;
+}
+.layer p {
+    background-color: wheat;
+    padding:3px;
+    border-radius: 5px;
+}
+
+.layer i {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.project:hover .layer {
+    height: 100%;
+}
+
+/* PROJECTT MODAL WINDOW. */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; 
+    height: 60%; 
+    overflow: hidden; 
+    background: #262626;
+    border-radius: 13px;
+    transition: transform 0.5s;
+    padding: 15px;
+    margin: 25px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border: 3.5px double aqua;
+    justify-content: center;
+    align-items: center;
+}
+.modal .fas:hover {
+    color: aqua;
+    scale: 1.2;
+    cursor: pointer;
+}
+.modal h1{
+    color:aqua;
+    margin-top: 50px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    max-width:50%
+}
+
+
+.modal p{
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width:45%;
+}
+
+#slider , #slider2, #slider3{
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+}
+
+#slider figure, #slider2 figure, #slider3 figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+}
+
+#slider figure img, #slider2 figure img, #slider3 figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+.slider img{
+    flex: 1 0 65%;
+    height: 70%;
+    scroll-snap-align: start;
+    object-fit:cover;
+}
+
+
+/*----- Contact --------*/
+.contact-left {
+    flex-basis: 35%;
+    padding: 50px 0;
+}
+
+.contact-left p {
+    margin-top: 40px;
+}
+
+.contact-left i {
+    color: aqua;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons i {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons i:hover {
+     color: #ff004f;
+     transform: translateY(-5px);
+}
+
+
+
+/*------------------ COPYRIGHT ---------------------------- */
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*--------------- SMALL SCREEN OPTIMIZING ------------------------*/
+
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+
+    #header {
+        background-image: url(images/phone-background.png);
+    }
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: aqua;
+        position: fixed;
+        top:0;
+        right: -200px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 35px;
+        left: 35px;
+        cursor: pointer;
+    }
+
+    .modal {
+        width: 90%;
+        height: 70%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .modal h1 {
+        font-size: 20px;
+    }
+
+    .modal p {
+        font-size: 14px;
+        max-width: 80%;
+        margin-top: 40%;
+    }
+}

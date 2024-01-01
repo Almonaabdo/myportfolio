@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en"/>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href ="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3db68fd995.js" crossorigin="anonymous"></script>    <title>Home</title>
+</head>
+
+<body>
+    <!--Main Home-->
+    <div id="header">
+        <div class="container">
+            <nav>
+              <img src="images/newLogo.png" class="logo">
+              <ul id="sideMenu">
+                <li> <a href="#about">About Me</a></li>
+                <li> <a href="#experience">Experience</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closeMenu"></i>
+              </ul>
+              <i class="fas fa-bars" onclick="openMenu"></i>
+            </nav>
+
+            <div class="header-text">
+              <p>Software Engineer</p>
+              <i class="fa-solid fa-laptop-code blue-color"></i>
+              <h1>Hi, I'm <i> <span>Abdurrahman</span></i> <br>Software Engineering Student</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!----------- ABOUT ME ------------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/profilepic2.png">
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>Passionate second year Software Engineering Co-op student (4-16 months) excited to start my professional journey by Spring 2024 and try new challenges and grow!.
+               With an exceptional talent for analytical thinking and problem-solving, and collaborating with team members by communicating effectively.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+              <p class="tab-links"  onclick="opentab('education')"> Education</p>
+              <p class="tab-links" onclick="opentab('community')"> Community</p>
+            </div>
+
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Programming Proficiency: </span><br>Proficient in popular coding languages & tools, ensuring smooth software development.</li>
+                <li><span>Problem Solving: </span><br>Ability to analyze and solve complex issues efficiently and make the right decisions..</li>
+                <li> <span>Team Collaboration:</span><br>Strong communicator with 3 languages allowing for effective teamwork to achieve project goals.</li>
+                <li> <span> Adaptability: </span><br>Quick learner and adapts to new technologies very quickly.</li>
+              </ul>
+            </div>
+
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Software Engineering Technology:</span><br>3-years Advanced Diploma in Software Engineering Fundementals and Technologies</li>
+                <li> <span>High School:</span><br>Grand River Collegiate Instetuite student and part of the school's soccer team</li>
+                <li> <span> CS50: </span><br>Attended Harvard's CS50 course online when I was learning basic coding in early highschool.</li>
+              </ul>
+            </div>
+
+
+            <div class="tab-contents" id="community">
+              <ul>
+                <li>
+                  <span>Newcomers Helper: YMCA 2019-2021</span><br>
+                    Contributed to the YMCA as a Newcomers Helper, guiding newcomers to explore Canada's beauty and attractions.
+                    Organized enjoyable activities for unique experiences and served as a translator for effective communication between English and Arabic speakers.
+                  </li>
+              </ul>
+            </div>
+
+
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!---------- EXPERIENCE --------------->
+<div id="experience">
+  <div class="container">
+    <h1 class="sub-title">Experience</h1>
+
+    <div class="experience-list">
+      <div class="experienceBox">
+        <i class="fas fa-code fa-bounce"></i>
+        <h2>Full Stack</h2>
+        <p><b> Web Front-End:</b> React, ASP.NET, jQuery, and base Html/Css/JS <br> <b>Windows:</b> .NET WPF along with other tools to develop windows applications</p>
+        <p><br/><b>Back-End:</b> .NET C# for back-end development, as well as C/C++ for algorithmatic applications<br/><br/> <b> Database:</b> Centerelized MySql database using google cloud services with Entity-Framework to manage the data.</p>
+      </div>
+
+      <div class="experienceBox">
+        <i class="fa-solid fa-code-branch fa-bounce"></i>
+        <h2>Version Control</h2>
+        <p>skillfully employed key version control and collaboration tools such as <b>Git</b> and <b>GitHub</b>. These platforms have played a pivotal role in preserving and tracking different versions of my work,
+            enabling efficient collaboration with team members. Additionally, I've used <b>Doxygen</b> for thorough documentation, ensuring clarity and easy understanding in the development process.<br/><br/> </p>
+      </div>
+
+      <div class="experienceBox">
+        <i class="fa-solid fa-microchip fa-bounce"></i>
+        <h2>Microprocessors</h2>
+        <p>Worked with low-level development using Embedded <b> C</b> and <b>ARM</b> for STM32F303 board, to develop basic embedded programs that utilize registers to move data in memory, and watchdog timers for reliability </p>
+      </div>
+
+      <div class="experienceBox">
+        <i class="fa-solid fa-arrows-spin fa-bounce"></i>
+        <h2>SDLC</h2>
+          <p>From the flexible approach of <b>Agile</b> and <b>Scrum</b> to the more structured <b>Waterfall</b> model. <br><br>This journey has not only equipped me with the technical
+          skills but also instilled a commitment to the principles of <b>SOLID</b> in software engineering. It's not just about writing code;
+          it's about crafting solutions that are scalable, maintainable, and resilient.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ---------------------- PROJECTS------------------------>
+<div id="projects">
+  <div class="container">
+    <h1 class="sub-title">Projects</h1>
+    <div class="projects-list">
+
+      <!-- TMS PROJECT -->
+      <div class="project" onclick="openModal('tmsModal')">
+        <img src="images/tms/2.png">
+        <div class="layer">
+          <h3> (TMS) Transportation Managment System.</h3>
+          <p>Logistic Shipment Software</p>
+          <i class="fa-solid fa-hand-pointer"></i>
+        </div>
+      </div>
+
+      <!-- TMS MODAL WINDOW -->
+      <div class="modal" id="tmsModal">
+          <i class="fas fa-times" onclick="closeModal('tmsModal')"></i>
+
+          <!-- TMS IMAGE SLIDER -->   
+          <div id="slider">    
+              <figure>	        
+                  <img src="images/tms/2.png"/>		        
+                  <img src="images/tms/3.png"/>		        
+                  <img src="images/tms/4.png"/>                    
+                  <img src="images/tms/5.png"/>
+                  <img src="images/tms/6.png"/>       
+
+              </figure> 
+          </div>
+          <h1>Transportation Managment System</h1>
+          <p>Over 5,000 lines of code is what took to design this complex software, that handles accepting new orders and clients from a remote database,
+              accept and work with different carriers that will ship the packages, assign the best carrier that charges the least amount for the detailed order,
+              complete the order and generate summary and log files of all transactions in details and stores them on the centrelized MySql database.
+
+          </p>
+      </div>
+
+
+
+        <!-- TCP SERVER PROJECT -->
+        <div class="project" onclick="openModal('tcpServerModal')">
+          <img src="images/tcp-server/1.png">
+          <div class="layer">
+            <h3> TCP Multi-Threaded Server</h3>
+            <p>Multiple clients connect & play a game on the same server</p>
+            <i class="fa-solid fa-hand-pointer"></i>
+          </div>
+        </div>
+
+        <!-- TCP SERVER MODAL WINDOW -->
+        <div class="modal" id="tcpServerModal">
+          <i class="fas fa-times" onclick="closeModal('tcpServerModal')"></i>
+
+            <!-- TCP SERVER IMAGE SLIDER -->
+            <div id="slider3">    
+                <figure>	        
+                    <img src="images/tcp-server/1.png"/>		        
+                    <img src="images/tcp-server/2.png"/>		        
+                    <img src="images/tcp-server/3.png"/>
+                    <img src="images/tcp-server/4.png"/>		        
+                    <img src="images/tcp-server/5.png"/>		        
+
+                </figure> 
+            </div>
+            <h1>.NET TCP Server</h1>
+            <p>This Project taught me a lot of how the internet works and how we are all connected together.<br/> It is a multi-threaded TCP servers that accepts clients from private or public networks and let them play a game of guessiong words, once the client guesses
+                all games, it prompts them to play again, or end connection. It logs all details and exceptions to a log file if the server was prefered with no console. I also did a window service version of the server, that can be turned on automatically, when computer starts.
+            </p>
+        </div>
+
+
+
+      <!-- PIZZA SHOP PROJECT -->
+      <div class="project" onclick="openModal('pizzaShopModal')">
+        <img src="images/pizzaShop.png">
+        <div class="layer">
+          <h3> SET PIZZA.</h3>
+          <p>Pizza Ordering Web App</p>
+          <i class="fa-solid fa-hand-pointer"></i>
+        </div>
+      </div>
+
+      <!-- PIZZA MODAL WINDOW -->
+      <div class="modal" id="pizzaShopModal">
+        <i class="fas fa-times" onclick="closeModal('pizzaShopModal')"></i>
+
+          <!-- PIZZA IMAGE SLIDER -->
+          <div id="slider2">    
+              <figure>	        
+                  <img src="images/pizza-shop/1.png"/>		        
+                  <img src="images/pizza-shop/2.png"/>		        
+                  <img src="images/pizza-shop/3.png"/>		        
+              </figure> 
+          </div>
+          <h1>ASP.NET Pizza Shop</h1>
+          <p>PIZZA SHOP is a simple pizza ordering web application. But, what is unique about it that it was developed with ASP.NET technology
+             for code-behind and it used jQuery/Ajax calls to handle dynamically updating order details based on user input. </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!------------------------ CONTACT -------------------------->
+<form id="form1" runat="server">
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>aalmouna7512@conestogac.on.ca</p>
+                    <p><i class="fa-solid fa-phone"></i>+1(226)898-4470</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/abdurrahman-almouna/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Almonaabdo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+
+
+<!------ COPYRIGHT ------>
+<div class="copyright">
+  <p>© Made with passion 💙 by Abdurrahman Almouna</p>
+</div>
+
+
+
+
+<script>
+  var tabLinks = document.getElementsByClassName("tab-links");
+  var tabContents= document.getElementsByClassName("tab-contents");
+
+  // This function is for hiding and unhiding experience list.
+  function opentab (tabName){
+    for(tabLink of tabLinks)
+    {
+      tabLink.classList.remove("active-link");
+    }
+
+    for(tabContent of tabContents)
+    {
+      tabContent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabName).classList.add("active-tab");
+
+        // Triggering a reflow to apply the transition
+        void currentTab.offsetWidth;
+  }
+</script>
+
+
+
+<script>
+    // this function is for hidng and showing side bar depending on screen size.
+    var sidemenu = document.getElementById("sideMenu");
+
+    function closeMenu() {
+    sidemenu.style.right = "0";
+    }
+
+    function openMenu() {
+    sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+
+
+<!-- MODAL WINDOW FUNCTIONALITY -->
+<script>
+
+    // open clicked modal
+    function openModal(modalName) {
+        var modal = document.getElementById(modalName);
+
+        modal.style.display = "block";
+    }
+
+    // close clicked modal
+    function closeModal(modalName) {
+        var modal = document.getElementById(modalName);
+        modal.style.display = "none";
+    }
+</script>
+
+
+</body>
+</html>
