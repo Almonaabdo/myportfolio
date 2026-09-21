@@ -1,0 +1,86 @@
+/* ---------- Arabic / RTL overrides (loaded after ../styles.css) ---------- */
+
+:root {
+    --font: 'Cairo', 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --mono: 'Cairo', 'Tajawal', -apple-system, sans-serif;
+}
+
+/* Arabic script is cursive - imported letter-spacing breaks glyph joining */
+.eyebrow,
+.section-label,
+.hero-text h1,
+.section-title,
+.fact-num,
+.job-dates,
+.logo,
+.project-tag-line {
+    letter-spacing: normal;
+}
+
+/* Bullet lists: flip padding + marker side */
+.job-block ul li {
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.job-block ul li::before {
+    left: auto;
+    right: 0;
+}
+
+.project-points li {
+    padding-left: 0;
+    padding-right: 18px;
+}
+
+.project-points li::before {
+    left: auto;
+    right: 0;
+}
+
+/* Keep dates/emails/phone numbers reading left-to-right */
+.job-dates,
+.contact-item[href^="mailto"],
+.contact-item[href^="tel"] {
+    direction: ltr;
+    unicode-bidi: isolate;
+}
+
+/* Mobile nav panel opens from the left in RTL */
+@media (max-width: 720px) {
+    .nav ul {
+        right: auto;
+        left: -100%;
+        border-radius: 0 0 0 16px;
+        border-left: none;
+        border-right: 1px solid var(--border);
+        transition: left 0.3s ease;
+    }
+
+    .nav ul.open {
+        left: 0;
+        right: auto;
+    }
+
+    .nav ul li a {
+        text-align: right;
+    }
+}
+
+/* Lightbox controls mirrored, arrows flipped to match RTL browsing direction */
+.lightbox-close {
+    right: auto;
+    left: 24px;
+}
+
+.lightbox-nav.lightbox-prev {
+    left: auto;
+    right: 24px;
+    transform: translateY(-50%) scaleX(-1);
+}
+
+.lightbox-nav.lightbox-next {
+    right: auto;
+    left: 24px;
+    transform: translateY(-50%) scaleX(-1);
+}

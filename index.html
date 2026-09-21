@@ -7,6 +7,10 @@
     <meta name="description" content="Abdurrahman Almouna - Forward Deployed Engineer & Full-Stack Software Engineer. AI-powered tools, full-stack web & mobile apps.">
     <title>Abdurrahman Almouna - Full-Stack Software Engineer</title>
 
+    <link rel="alternate" hreflang="en" href="/">
+    <link rel="alternate" hreflang="ar" href="/ar/">
+    <link rel="alternate" hreflang="x-default" href="/">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -30,6 +34,7 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#contact" class="nav-cta">Contact</a></li>
+                    <li><a href="/ar/">العربية</a></li>
                 </ul>
             </nav>
 
@@ -198,6 +203,36 @@
                             <span>TensorFlow.js</span>
                         </div>
                         <a href="https://setprojectday.ca/post/2026/squadquest/" target="_blank" rel="noopener" class="project-link">
+                            View project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- LANDLORDLINK -->
+                <article class="project-card reveal">
+                    <button class="project-visual visual-image" data-lightbox="landlordlink" aria-label="View LandlordLink screenshots">
+                        <img src="images/landlordlink/1.png" alt="LandlordLink admin dashboard overview">
+                        <span class="visual-overlay"><i class="fa-solid fa-expand"></i> View screenshots</span>
+                    </button>
+                    <div class="project-body">
+                        <span class="project-tag-line">Personal project · 2025 - 2026</span>
+                        <h3>LandlordLink</h3>
+                        <p>Full-stack property management platform connecting building admins and tenants -
+                           a web dashboard for owners and staff, paired with a mobile app for tenants,
+                           covering leasing, maintenance, and rent collection in one system.</p>
+                        <ul class="project-points">
+                            <li>Web dashboard for admins: buildings, leases, tenants, maintenance & billing in one view</li>
+                            <li>Companion mobile app lets tenants submit maintenance requests and track their lease</li>
+                            <li>Interactive floor-by-floor occupancy view for every building</li>
+                        </ul>
+                        <div class="tag-list">
+                            <span>Next.js</span>
+                            <span>React Native</span>
+                            <span>TypeScript</span>
+                            <span>PostgreSQL</span>
+                            <span>Supabase</span>
+                        </div>
+                        <a href="https://landlordlink-beta.vercel.app/sign-in?next=%2Fdashboard" target="_blank" rel="noopener" class="project-link">
                             View project <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
@@ -387,7 +422,8 @@
 
         // Lightbox (TMS screenshots)
         const galleries = {
-            tms: ['images/tms/2.png', 'images/tms/3.png', 'images/tms/4.png', 'images/tms/5.png', 'images/tms/6.png']
+            tms: ['images/tms/2.png', 'images/tms/3.png', 'images/tms/4.png', 'images/tms/5.png', 'images/tms/6.png'],
+            landlordlink: ['images/landlordlink/1.png', 'images/landlordlink/2.png', 'images/landlordlink/4.png']
         };
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightboxImg');
